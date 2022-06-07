@@ -1,0 +1,52 @@
+body {
+    height: 100%;
+    height: 100vh;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    text-align: center;
+}
+.specialbutton {
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: solid 1px white;
+    border-style: dotted;
+    margin: 20px;
+    text-align: center;
+}
+.specialbutton:hover {
+    color: rgb(51, 255, 0);
+    border: solid 1px rgb(51, 255, 0);
+}
+.specialbutton:activ {
+    color: rgb(51, 255, 0);
+    border: solid 1px rgb(51, 255, 0);
+}
+#element{
+    text-align: center;
+    position: relative;
+}
+.smiley{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(51, 255, 0);
+    border: none;
+    position: absolute; 
+    border-radius: 50%;
+}
+.wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}

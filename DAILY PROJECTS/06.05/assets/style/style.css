@@ -1,0 +1,31 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    background-color: black;
+}
+.button {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: solid 1px white;
+    border-style: dotted;
+    margin: 20px;
+}
+.button:hover {
+    color: black;
+    background-color: transparent;
+    border: solid 1px black;
+    border-style: dotted;
+}
+.button:active {
+    color: black;
+    background-color: transparent;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+}
+

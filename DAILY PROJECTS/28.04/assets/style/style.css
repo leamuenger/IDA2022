@@ -1,0 +1,152 @@
+:root{
+    --red: #f33;
+    --green: #3f3;
+    --blue: #33f;
+    --pink: #f3c;
+    --cyan: #3ff;
+    --yellow: #ff3;
+    --white: #eee;
+    --black: #111;
+    --grey: #999;
+    --background: rgb(255, 255, 255);
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+    color: black;
+    background-color: white;
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    margin-top: 01.5em;
+    margin-bottom: 01.5em;
+    margin-left: 01.5em;
+    margin-right: 01.5em;
+  }
+  
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+  }
+  .flex-item{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: scale(1);
+      animation: pulse 0.5s infinite;
+  }
+  .title{
+    font-family: helvetica;
+  }
+  .red-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #f33 25%, rgb(255, 255, 255) 50%);
+  
+  }
+  .green-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #3f3  25%, rgb(255, 255, 255) 50%);
+  
+  }
+  .blue-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #33f 25%, rgb(255, 255, 255) 50%);
+  }
+  .pink-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #f3c 25%, rgb(255, 255, 255) 50%);
+  }
+  .cyan-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #3ff  25%, rgb(255, 255, 255) 50%);
+  }
+  .yellow-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #ff3 25%, rgb(255, 255, 255) 50%);
+  }
+  .black-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #111 25%, rgb(255, 255, 255) 50%);
+  }
+  .grey-bg{
+    background: radial-gradient(rgb(255, 255, 255) 5%, #999 25%, rgb(255, 255, 255) 50%);
+  }
+  .grey-bg :hover{
+    background: radial-gradient(#999 5%, rgb(255, 255, 255) 50%, #999 25%,);
+  }
+  .all-bg{
+    background: radial-gradient(#f33 10%, #3f3 20%, #33f 30%, #f3c 40%, #3ff 50%, #ff3 60%, #eee 70%, #111 80%, #999 100%);
+  }
+  
+  
+  
+  @media (orientation: portrait) {
+      body {
+        flex-direction: column;
+      }
+    }
+    .color-circle {
+      height: 60vw;
+      width: 60vw;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    @media (orientation: landscape) {
+      .color-circle {
+        height: 60vh;
+        width: 60vh;
+      }
+    }
+    .color-circle::before {
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 100%;
+    }
+    
+    .dwrap {
+      max-height: 100px;
+    }
+    
+    .d {
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+      background: var(#000);
+    }
+    
+    .color-circle::before {
+      animation-name: switchMood;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      transition-timing-function: ease;
+      transition-property: transform;
+      transform: rotate(360deg);
+    background: radial-gradient(#f33 0%, #3f3 2%, #33f 10%, #f3c 20%, #3ff 30%, #ff3 40%, #999 50%, #111 70%, rgb(255, 255, 255) 0%);
+      transform: scale(1);
+      animation: pulse 0.5s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+          transform: scale(0.95);
+      }
+  
+      70% {
+          transform: scale(1);
+      }
+  
+      100% {
+          transform: scale(0.95);
+      }
+  }

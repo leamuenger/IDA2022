@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-txt-size: calc(14px + (28 - 14) * ((100vw - 800px) / (1400 - 800)));
+    --main-txt-size-min: 14px;
+    --main-txt-size-max: 22px;
+    --main-txt-line-height: 1.5em;
+    --txt-line-height-small: 1.4vw;
+    --win-min-break: 800px;
+    --win-max-break: 1400px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+    color: white;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+    text-align: center;
+}
+h2 {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+}
+p {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    border-bottom: white;
+    color: white;
+}
+a:hover {
+    color: white;
+    border-bottom: white;
+    text-decoration: underline;
+}
+body {
+    height: 100%;
+    height: 100vh;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.arbeit {
+    transition: height 1s ease;
+    justify-content: space-between;
+}
+.content-bar {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+}
+.content {
+    column-count: 3;
+}
+p {
+    margin-top: 9px;
+}
+.open-button,
+.close-button,
+.open-button-about,
+.close-button-about {
+    cursor: pointer;
+    height: 40px;
+}
+.hide {
+    display: none;
+}
+
+.image {
+	background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url(/assets/images/2.jpg);
+    width: 100%; 
+    height: 100%;    
+}

@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:root {
+    --main-txt-size: calc(14px + (28 - 14) * ((100vw - 800px) / (1400 - 800)));
+    --main-txt-size-min: 14px;
+    --main-txt-size-max: 22px;
+    --main-txt-line-height: 1.5em;
+    --txt-line-height-small: 1.4vw;
+    --win-min-break: 800px;
+    --win-max-break: 1400px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: auto;
+    color: white;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+  html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    border-bottom: white;
+    color: white;
+}
+a:hover {
+    color: white;
+    border-bottom: white;
+    text-decoration: underline;
+}
+body {
+    height: 100%;
+    height: 100vh;
+    line-height: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ol, ul {
+	list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  p:hover {
+    color: black;
+    text-decoration: none;
+  }
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.arbeit {
+    height: calc(100vh - 40px);
+    padding-top: 40px;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+    flex-direction: row;
+    padding-right: 40px;
+    transition: height 1s ease;
+    justify-content: space-between;
+}
+p {
+    margin-top: 9px;
+}
+.body-inner {
+    transition: transform 0.5s ease;
+    overflow-y: hidden;
+}
+
+/*VIBRATION*/
+.vibration span{
+    transition: all 500ms;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin-right: 10px;
+}
+.vibration span:hover{
+    filter: blur(3px);
+    animation: vibrate 50ms linear infinite forwards;
+}
+@keyframes vibrate{
+    0% {
+        transform: translateX(-1px) translateY(1px);
+    }
+    100% {
+        transform: translateX(1px) translateY(-2px);
+    }
+}
